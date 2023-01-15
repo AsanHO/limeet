@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "limeet",
+    "slug": "limeet",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "limeet"
+}
