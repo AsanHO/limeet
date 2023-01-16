@@ -1,18 +1,12 @@
 import { NavigationContainer } from "@react-navigation/native";
-import { StatusBar } from "expo-status-bar";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
-import { SafeAreaView, Text, View } from "react-native";
-import Root from "./navigations/Root";
+import StackNavigator from "./StackNavigator";
 
-isLogin = false;
 export default function App() {
-  return isLogin ? (
+  return (
     <NavigationContainer>
-      <Root />
+      <StackNavigator />
     </NavigationContainer>
-  ) : (
-    <SafeAreaView>
-      <Text>Login</Text>
-    </SafeAreaView>
   );
 }
