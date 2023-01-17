@@ -1,5 +1,7 @@
 import { NavigationContainer } from "@react-navigation/native";
 import React from "react";
+import { getAuth } from "./firebase";
+
 import { AuthProvider } from "./hooks/useAuth";
 import StackNavigator from "./StackNavigator";
 

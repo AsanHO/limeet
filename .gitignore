@@ -58,3 +58,4 @@ dist/
 #FB
 google-services.json
 GoogleService-Info.plist
+.env
