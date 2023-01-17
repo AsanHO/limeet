@@ -1,10 +1,10 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-const HomeScreen = () => (
+const Chat = () => (
   <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-    <Text>HomeScreen</Text>
+    <Text>Chat</Text>
   </View>
 );
 
-export default HomeScreen;
+export default Chat;

@@ -1,12 +1,16 @@
 import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
+import { AuthProvider } from "./hooks/useAuth";
 import StackNavigator from "./StackNavigator";
 
 export default function App() {
   return (
     <NavigationContainer>
-      <StackNavigator />
+      {/* HOC - Higer Order Component */}
+      <AuthProvider>
+        {/* Passes down the coll auth stuff to children */}
+        <StackNavigator />
+      </AuthProvider>
     </NavigationContainer>
   );
 }
