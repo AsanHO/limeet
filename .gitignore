@@ -54,3 +54,7 @@ buck-out/
 .expo/
 web-build/
 dist/
+
+#FB
+google-services.json
+GoogleService-Info.plist
