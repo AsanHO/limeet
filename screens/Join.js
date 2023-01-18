@@ -31,12 +31,14 @@ const Join = () => {
     if (isLoading) {
       return; //이미 로딩중이라면 다시 클릭할 수 없음
     }
+    setIsLoading(true);
     try {
       const userCredential = await auth().createUserWithEmailAndPassword(
         email,
         pw
       );
       console.log(userCredential);
+      setIsLoading(false);
     } catch (error) {
       console.log(error);
     }
