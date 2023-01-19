@@ -3,11 +3,13 @@
     "name": "limeet",
     "slug": "limeet",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "googleServicesFile": "./google-services.json"
+    },
     "ios": {
-      "bundleIdentifier": "org.name.limeet"
+      "bundleIdentifier": "org.name.limeet",
+      "googleServicesFile": "./GoogleService-Info.plist"
     }
   },
   "name": "limeet"

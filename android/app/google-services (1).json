@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "911320154097",
+    "project_id": "limeet-49d7c",
+    "storage_bucket": "limeet-49d7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911320154097:android:7a8dbfe9646fa564638e50",
+        "android_client_info": {
+          "package_name": "com.limeet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911320154097-9o7k0sfsi57k4hbk76dbqh68pvsah1qi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.limeet",
+            "certificate_hash": "e5ee615c8c4f6e5a26732dbce937923214f38d81"
+          }
+        },
+        {
+          "client_id": "911320154097-gk5mfbnvtfviblveogn88mb711c60vma.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY3lxfUdrr8oX0rQzztv9hhlTAG1n2qTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "911320154097-gk5mfbnvtfviblveogn88mb711c60vma.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "911320154097-40damcp8nisv7krcgq5hg1klnoag5fuo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.name.limeet"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

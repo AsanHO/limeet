@@ -5,11 +5,14 @@ import { GoogleSignin } from "@react-native-google-signin/google-signin";
 import auth from "@react-native-firebase/auth";
 
 async function onGoogleButtonPress() {
-  console.log("start");
-  const { idToken } = await GoogleSignin.signIn();
-  console.log(idToken);
-  const googleCredential = auth.GoogleAuthProvider.credential(idToken);
-  return auth().signInWithCredential(googleCredential);
+  try {
+    console.log("start");
+    const { idToken } = await GoogleSignin.signIn();
+    const googleCredential = auth.GoogleAuthProvider.credential(idToken);
+    return auth().signInWithCredential(googleCredential);
+  } catch (error) {
+    console.log(error);
+  }
 }
 const googleSigninConfigure = () => {
   GoogleSignin.configure({
@@ -27,13 +30,9 @@ const Login = ({ navigation: { navigate } }) => {
       <Button
         title="Google Sign-In"
         onPress={() => {
-          try {
-            onGoogleButtonPress().then(() =>
-              console.log("Signed in with Google!")
-            );
-          } catch (error) {
-            console.log(error);
-          }
+          onGoogleButtonPress().then(() =>
+            console.log("Signed in with Google!")
+          );
         }}
       />
       <TouchableOpacity onPress={() => {}}>
